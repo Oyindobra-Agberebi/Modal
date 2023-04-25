@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  color: white;
+  position: relative;
+}
+
+main {
+  height: 100vh;
+ width: 100%;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+}
+
+
+.container h1,
+p {
+  text-align: center;
+}
+
+form {
+  margin: 2em 0;
+  /* background-color: red; */
+  /* width: 200px; */
+}
+
+.form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1em;
+  align-items: center;
+}
+
+form span {
+  font-size: 20px;
+}
+
+span > span {
+  display: flex;
+}
+
+.form input {
+  padding: 1em;
+  margin-left: 2em;
+  width: 300px;
+}
+
+button {
+  padding: 1em;
+  width: 100%;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: blue;
+  color: white;
+}
+
+input,
+button {
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Modal*/
+
+#modal {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* transform: scale(0.1); */
+  transition: .5s ;
+}
+
+.modal {
+  display: none;
+}
+.modal-container {
+  background-color: white;
+  padding: 2em;
+  color: black;
+  border-radius: 10px;
+  display: grid;
+  gap: 1em;
+  position: relative;
+}
+
+.modal-container .fa-xmark {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+}
